@@ -26,7 +26,7 @@ const ClientesList = () => {
                     />
                 ))}
             </div>
-            <Link to="/" className="home-link">Home</Link>
+            <Link to="/" className="home-link">Inicio</Link>
         </div>
     )
 }

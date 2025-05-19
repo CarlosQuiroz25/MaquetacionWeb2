@@ -33,7 +33,7 @@ const BuscarCliente = () => {
     }
 
     return (
-        <div style={ {marginTop: '200px'}}>
+        <div style={{ marginTop: '200px' }}>
             <h1 className="page-title">Buscar Cliente</h1>
 
             <div className="card" style={{ marginBottom: '30px' }}>
@@ -83,7 +83,7 @@ const BuscarCliente = () => {
                 </div>
             )}
 
-            <Link to="/" className="home-link">Home</Link>
+            <Link to="/" className="home-link">Inicio</Link>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 const ClienteDetail = () => {
     const { id } = useParams()
 
-    // Datos de clientes obtenidos de BuscarCliente.jsx
+    // Datos de los clientes
     const clientesData = [
         { id: 1, nombre: 'Julian Vargas', correo: 'julian.vargas@ejemplo.com' },
         { id: 2, nombre: 'Maria Beltrán', correo: 'maria.beltran@ejemplo.com' },
@@ -14,11 +14,11 @@ const ClienteDetail = () => {
         { id: 7, nombre: 'Maria Gaviria', correo: 'maria.gaviria@ejemplo.com' },
         { id: 8, nombre: 'Pedro Salas', correo: 'pedro.salas@ejemplo.com' },
     ]
-    
+
     // Encontrar el cliente por ID o usar un valor predeterminado
-    const clienteBase = clientesData.find(c => c.id === parseInt(id)) || { nombre: 'Cliente no encontrado', correo: 'no@disponible.com' }
-    
-    // Combinar los datos del cliente con los valores fijos
+    const clienteBase = clientesData.find(c => c.id === parseInt(id)) || { nombre: 'Cliente no encontrado' }
+
+    // Estos valores son fijos para todos los clientes
     const cliente = {
         ...clienteBase,
         telefono: '555-123-0001',
